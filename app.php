@@ -3,7 +3,8 @@
  
  // Autoload dependencies
  require 'vendor/autoload.php';
- 
+
+
  use PHPMailer\PHPMailer\PHPMailer;
  use PHPMailer\PHPMailer\Exception;
  use Slim\Factory\AppFactory;
@@ -224,9 +225,9 @@
      ]
  );
  ;
- $db = $mongoClient->selectDatabase('my_database');
+ $db = $mongoClient->selectDatabase('robotics_point_database');
  $productCollection = $db->selectCollection('products');
- $db1=$mongoClient->selectDatabase('User_Database');
+ $db1=$mongoClient->selectDatabase('robotics_point_User_Database');
  $userCollection = $db1->selectCollection('Users');
   
  
