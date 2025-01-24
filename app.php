@@ -50,7 +50,7 @@
      }
  
      // Check if the provided name and password match the required superuser credentials
-     if ($userId === 'Momina' && $userPassword === 'Akhram') {
+     if ($userId === 'Momina' && $userPassword === 'Akram') {
        
  
          $response->getBody()->write(json_encode(['message' => 'Login successful']));
@@ -73,7 +73,7 @@
      }
  
      // Check if the provided name and password match the required superuser credentials
-     if ($userId === 'Momina' && $userPassword === 'Akhram') {
+     if ($userId === 'Momina' && $userPassword === 'Akram') {
        
  
          $response->getBody()->write(json_encode(['message' => 'Login successful']));
