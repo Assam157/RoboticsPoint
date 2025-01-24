@@ -568,7 +568,7 @@
              $mail->Port = 587;
  
              // Recipients
-             $mail->setFrom('robopoint944@gmail.com', 'BroSeeds');
+             $mail->setFrom('robopoint944@gmail.com', 'Robopoint');
              $mail->addAddress($recipient); // Use the email from the payload
  
              // Content
