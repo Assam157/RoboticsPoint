@@ -483,6 +483,7 @@
      $data = $request->getParsedBody();
      $productId = $data['_id'];
      $newQuantity = $data['availableQuant'];
+     $newPrice=$data['price']
  
      try {
          $objectId = new MongoDB\BSON\ObjectId($productId);
@@ -493,7 +494,7 @@
      // Update product's available quantity
      $updateResult = $productCollection->updateOne(
          ['_id' => $objectId],
-         ['$set' => ['availableQuant' => $newQuantity]]
+         ['$set' => ['availableQuant' => $newQuantity,'price'=>$newPrice]]
      );
  
      if ($updateResult->getModifiedCount() > 0) {
